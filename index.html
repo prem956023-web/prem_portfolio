@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prem | Developer Portfolio</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080b16;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #0d1120;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #8b7cff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #8b7cff;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 8vw, 70px);
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #8b7cff;
+}
+
+.hero p {
+  color: #a8aec4;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 13px 28px;
+  background: #7865ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #5944e8;
+  transform: translateY(-3px);
+}
+
+section {
+  padding: 80px 8%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+.heading span {
+  color: #8b7cff;
+}
+
+.about {
+  max-width: 750px;
+  margin: auto;
+  text-align: center;
+  color: #b4bbce;
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.skill {
+  background: #141a2c;
+  border: 1px solid #272e48;
+  padding: 30px 15px;
+  text-align: center;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-6px);
+  border-color: #8b7cff;
+}
+
+.skill h3 {
+  color: #a99cff;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  color: #a8aec4;
+  font-size: 14px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+}
+
+.project {
+  background: #141a2c;
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px solid #272e48;
+}
+
+.project h3 {
+  color: #a99cff;
+  margin-bottom: 12px;
+}
+
+.project p {
+  color: #b4bbce;
+  line-height: 1.6;
+}
+
+.contact {
+  text-align: center;
+  color: #b4bbce;
+}
+
+footer {
+  background: #0d1120;
+  text-align: center;
+  padding: 25px;
+  color: #a8aec4;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 12px;
+  }
+
+  section {
+    padding: 60px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">PREM.</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Hello, I'm <span>Prem</span></h1>
+  <p>Aspiring Web Developer<br>
+  Learning today, building tomorrow.</p>
+
+  <a href="#projects" class="btn">Explore My Work</a>
+</section>
+
+<section id="about">
+  <h2 class="heading">About <span>Me</span></h2>
+
+  <p class="about">
+    Hello! I'm Prem, an aspiring web developer.
+    I'm passionate about technology, coding and creating
+    websites. I'm currently learning HTML, CSS and
+    JavaScript and working towards becoming a professional
+    developer.
+  </p>
+</section>
+
+<section id="skills">
+  <h2 class="heading">My <span>Skills</span></h2>
+
+  <div class="skills">
+    <div class="skill">
+      <h3>HTML</h3>
+      <p>Webpage structure</p>
+    </div>
+
+    <div class="skill">
+      <h3>CSS</h3>
+      <p>Website styling</p>
+    </div>
+
+    <div class="skill">
+      <h3>JavaScript</h3>
+      <p>Website interactions</p>
+    </div>
+
+    <div class="skill">
+      <h3>Learning</h3>
+      <p>Always improving</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="heading">My <span>Projects</span></h2>
+
+  <div class="projects">
+    <div class="project">
+      <h3>Registration Form</h3>
+      <p>A beginner-friendly registration form built using HTML.</p>
+    </div>
+
+    <div class="project">
+      <h3>Personal Portfolio</h3>
+      <p>My personal website showcasing my learning journey.</p>
+    </div>
+
+    <div class="project">
+      <h3>Coming Soon</h3>
+      <p>More creative projects are on the way.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+
+  <div class="contact">
+    <p>Interested in working together?</p>
+    <p>Let's connect!</p>
+    <a href="mailto:your-email@example.com" class="btn">
+      Send Email
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Prem. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
